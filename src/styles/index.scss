@@ -304,12 +304,13 @@ html, body {
     border: 1px solid $blue_30;
     border-radius: 5px;
     background: white;
-    display: none;
+    opacity: 0.0;
     width: 250px;
     height: 400px;
     position: fixed;
     bottom: 0;
     right: 0;
+    transition: all .1s ease-in-out;
     .chatbox-header {
         display: flex;
         justify-content: space-around;
@@ -327,7 +328,28 @@ html, body {
             }
         }
     }
-    .chatbox-text-area {
 
+    // Where the text will be.
+
+    .chatbox-text-area {
+        // The actual chat.
+        .chat {
+            text-align: center;
+            margin: auto;
+            position: relative;
+            width: 250px;
+            height: 300px;
+            scroll-behavior: auto;
+        }
+        // Client typing area.
+        textarea {
+            outline: none;
+            resize: none;
+            width: 230px;
+            height: 50px;
+            position: absolute;
+            left: 6px;
+            bottom: 20px;
+        }
     }
 }
