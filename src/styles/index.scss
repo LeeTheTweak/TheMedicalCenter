@@ -9,6 +9,7 @@ html, body {
     font-family: sans-serif;
 }
 
+
 /* The main header of the website. */
 
 // The top nav section
@@ -93,6 +94,9 @@ html, body {
         border-radius: 50%;
         width: 60px;
         height: 60px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     p {
         text-align: center;
@@ -289,5 +293,41 @@ html, body {
                 text-decoration: underline;
             }
         }
+    }
+}
+
+
+// Donny chatbox 
+
+.donny-chatbox {
+    margin: 0 10px 10px 0;
+    border: 1px solid $blue_30;
+    border-radius: 5px;
+    background: white;
+    display: none;
+    width: 250px;
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    .chatbox-header {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        background: $blue_40;
+        h4 {
+            margin: 0;
+        }
+        .min-close-area {
+            .fa-window-minimize:hover {
+                cursor: pointer;
+            }
+            .fa-times:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .chatbox-text-area {
+
     }
 }

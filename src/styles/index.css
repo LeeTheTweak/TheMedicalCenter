@@ -94,6 +94,10 @@ html, body {
   height: 60px;
 }
 
+.virtual-assistant-area .virtual-assistant-image:hover {
+  cursor: pointer;
+}
+
 .virtual-assistant-area p {
   text-align: center;
 }
@@ -318,5 +322,40 @@ html, body {
 
 .jumbotron-footer-area div a:hover {
   text-decoration: underline;
+}
+
+.donny-chatbox {
+  margin: 0 10px 10px 0;
+  border: 1px solid #285e70;
+  border-radius: 5px;
+  background: white;
+  display: none;
+  width: 250px;
+  height: 400px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.donny-chatbox .chatbox-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  background: #284770;
+}
+
+.donny-chatbox .chatbox-header h4 {
+  margin: 0;
+}
+
+.donny-chatbox .chatbox-header .min-close-area .fa-window-minimize:hover {
+  cursor: pointer;
+}
+
+.donny-chatbox .chatbox-header .min-close-area .fa-times:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
