@@ -339,7 +339,16 @@ html, body {
             position: relative;
             width: 250px;
             height: 300px;
-            scroll-behavior: auto;
+            overflow: scroll;
+            p {
+                text-align: justify;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                color: white;
+                background-color: $blue_30;
+                padding: 5px;
+            }
         }
         // Client typing area.
         textarea {
@@ -350,6 +359,13 @@ html, body {
             position: absolute;
             left: 6px;
             bottom: 20px;
+        }
+        button {
+            font-size: .6rem;
+            height: 15px;
+            position: absolute;
+            bottom: 1px;
+            left: 100px;
         }
     }
 }
