@@ -324,6 +324,83 @@ html, body {
   text-decoration: underline;
 }
 
+.member-discount-area {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #deeef3;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.member-discount-area .member-discount-title-area h2 {
+  color: #284770;
+}
+
+.member-discount-area .member-discount-title-area p {
+  font-size: 1.3rem;
+  width: 450px;
+  line-height: 2;
+}
+
+.member-discount-area .member-discount-nav {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.member-discount-area .member-discount-nav a {
+  color: #285e70;
+  width: 300px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.member-discount-area .member-discount-nav .member-nav-container {
+  border-radius: 10px;
+  border-top: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.member-discount-area .member-discount-nav .member-nav-container div {
+  width: 300px;
+  padding: 8px;
+}
+
+.member-discount-area .member-discount-nav .member-nav-container div i {
+  color: #7798a3;
+  float: right;
+}
+
+.member-discount-area .member-discount-nav .member-nav-container:hover {
+  color: white;
+  background: lightblue;
+}
+
+.member-discount-area .member-discount-nav .member-nav-container:hover i {
+  color: white;
+}
+
 .donny-chatbox {
   margin: 0 10px 10px 0;
   border: 1px solid #285e70;
@@ -362,6 +439,7 @@ html, body {
 }
 
 .donny-chatbox .chatbox-text-area .chat {
+  padding: 0px 5px;
   text-align: center;
   margin: auto;
   position: relative;

@@ -296,6 +296,60 @@ html, body {
     }
 }
 
+// Member Discount Area
+
+.member-discount-area {
+    justify-content: space-around;
+    background-color: $blue_5;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .member-discount-title-area {
+        h2 {
+            color: $blue_40;
+        }
+        p {
+            font-size: 1.3rem;
+            width: 450px;
+            line-height: 2;
+        }
+    }
+    .member-discount-nav {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        a {
+            color: $blue_30;
+            width: 300px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .member-nav-container {
+            border-radius: 10px;
+            border-top: 1px solid white;
+            display: flex;
+            flex-direction: row;
+            transition: all .2s ease-in-out;
+            div {
+                width: 300px;
+                padding: 8px;
+                i {
+                    color: $blue_20;
+                    float: right;
+                }
+            }
+            &:hover {
+                color: white;
+                background: $blue_10;
+                i {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
 
 // Donny chatbox 
 
@@ -334,6 +388,7 @@ html, body {
     .chatbox-text-area {
         // The actual chat.
         .chat {
+            padding: 0px 5px;
             text-align: center;
             margin: auto;
             position: relative;
