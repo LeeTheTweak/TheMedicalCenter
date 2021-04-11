@@ -350,6 +350,52 @@ html, body {
     }
 }
 
+// End of Member Discount area -----------------------
+
+
+// Save On Area
+
+.save-on-area {
+    background: $blue_5;
+    .save-on {
+        margin-bottom: 30px;
+        text-align: center;
+        color: $black_20;
+        p {
+            margin: 0;
+        }
+    }
+    .save-on-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div {
+            padding-right: 80px;
+            border-right: 1px solid white;
+            flex-direction: column;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            i {
+                color: $blue_20;
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+// Members Section
+
+.members-section {
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+    background-image: url("https://agcdn-2mrybbgckm7omi0k.netdna-ssl.com/wp-content/uploads/2017/06/alphagamma-3-reasons-why-helping-people-is-not-always-good-for-business-entrepreneurship-1021x580.jpg");
+}
 
 // Donny chatbox 
 

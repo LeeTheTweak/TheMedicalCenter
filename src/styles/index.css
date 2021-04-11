@@ -401,6 +401,64 @@ html, body {
   color: white;
 }
 
+.save-on-area {
+  background: #deeef3;
+}
+
+.save-on-area .save-on {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #4e4e4e;
+}
+
+.save-on-area .save-on p {
+  margin: 0;
+}
+
+.save-on-area .save-on-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.save-on-area .save-on-nav div {
+  padding-right: 80px;
+  border-right: 1px solid white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.save-on-area .save-on-nav div i {
+  color: #7798a3;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.members-section {
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 400px;
+  background-image: url("https://agcdn-2mrybbgckm7omi0k.netdna-ssl.com/wp-content/uploads/2017/06/alphagamma-3-reasons-why-helping-people-is-not-always-good-for-business-entrepreneurship-1021x580.jpg");
+}
+
 .donny-chatbox {
   margin: 0 10px 10px 0;
   border: 1px solid #285e70;
