@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0 auto;
   font-family: sans-serif;
@@ -23,8 +24,8 @@ html, body {
 
 .top-nav-section li {
   border-top: 3px solid white;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .top-nav-section li:hover {
@@ -61,6 +62,10 @@ html, body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 20px 20px 0 20px;
+}
+
+.site-logo-area {
+  color: #285e70;
 }
 
 .site-logo-area .fas {
@@ -170,8 +175,8 @@ html, body {
 .jumbotron-navigation div {
   background: #285e70;
   padding: 10px 10px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .jumbotron-navigation div:last-child {
@@ -217,7 +222,7 @@ html, body {
 }
 
 .jumbotron-form-area a {
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: right;
   text-decoration: none;
   color: #7798a3;
@@ -228,7 +233,7 @@ html, body {
 }
 
 .jumbotron-form-area p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .jumbotron-form-area input {
@@ -276,8 +281,8 @@ html, body {
   border: 2px solid #284770;
   background: none;
   color: #284770;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .form-contents button:hover {
@@ -315,7 +320,7 @@ html, body {
 }
 
 .jumbotron-footer-area div a {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: white;
   text-decoration: none;
 }
@@ -378,8 +383,8 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .member-discount-area .member-discount-nav .member-nav-container div {
@@ -401,53 +406,24 @@ html, body {
   color: white;
 }
 
-.save-on-area {
-  background: #deeef3;
+.save-on-section table thead th {
+  font-size: 3vw;
+  color: #285e70;
 }
 
-.save-on-area .save-on {
-  margin-bottom: 30px;
-  text-align: center;
-  color: #4e4e4e;
-}
-
-.save-on-area .save-on p {
-  margin: 0;
-}
-
-.save-on-area .save-on-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.save-on-area .save-on-nav div {
-  padding-right: 80px;
-  border-right: 1px solid white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.save-on-section table tbody td {
+  width: 150px;
   text-align: center;
 }
 
-.save-on-area .save-on-nav div i {
-  color: #7798a3;
-  font-size: 60px;
-  margin-bottom: 20px;
+.save-on-section table tbody td i {
+  font-size: 7vw;
+  color: #285e70;
+}
+
+.save-on-section table tbody th {
+  color: #285e70;
+  font-size: 2vw;
 }
 
 .members-section {
@@ -464,14 +440,14 @@ html, body {
   border: 1px solid #285e70;
   border-radius: 5px;
   background: white;
-  opacity: 0.0;
+  opacity: 0;
   width: 250px;
   height: 400px;
   position: fixed;
   bottom: 0;
   right: 0;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .donny-chatbox .chatbox-header {
@@ -532,7 +508,7 @@ html, body {
 }
 
 .donny-chatbox .chatbox-text-area button {
-  font-size: .6rem;
+  font-size: 0.6rem;
   height: 15px;
   position: absolute;
   bottom: 1px;
