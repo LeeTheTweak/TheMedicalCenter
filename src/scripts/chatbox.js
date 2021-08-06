@@ -1,21 +1,32 @@
 
 $(() => {
 
+    // Finding and selecting the Donny virtual assistant name element.
+    // Looping through the desktop and mobile selectors for the 'Donny' name element.
+
+    for (let i = 0; i < 2; i++) {
+        let virtualAssistantNameEl = document.querySelectorAll("#virtualAssistantName")[i];
+        virtualAssistantName = "Donny";
+
+        virtualAssistantNameEl.textContent = virtualAssistantName;
+    }
+
+
     // When Donny image is clicked, display donny chat box.
 
     $(".virtual-assistant-image").on("click", () => {
-        $(".donny-chatbox").css({ 
-            "opacity" : "1.0" ,
-            "transition" : "all .1s ease-in-out"
+        $(".donny-chatbox").css({
+            "opacity": "1.0",
+            "transition": "all .1s ease-in-out"
         });
     })
 
     // When chatbox X is clicked, hide chatbox.
 
     $(".fa-times").on("click", () => {
-        $(".donny-chatbox").css({ 
-            "opacity" : "0.0",
-            "transition" : "all .1s ease-in-out"
+        $(".donny-chatbox").css({
+            "opacity": "0.0",
+            "transition": "all .1s ease-in-out"
         });
     });
 
@@ -32,11 +43,11 @@ $(() => {
 
     // Create an initial string.
     let donnyInitMessage = "Greetings. How may I help you?";
-    
+
 
     // Bind donnyInitMessage string to the donnyInitChatEl.
     donnyInitChatEl.textContent = donnyInitMessage;
-    
+
 
     // Append the created donny element to the chat.
     chat.append(donnyInitChatEl);
@@ -47,7 +58,7 @@ $(() => {
         console.log("Message Sent");
         // Create user chat element.
         let userResponseEl = document.createElement("P");
-        
+
         // User response string is the textarea textContent.
         let userResponse = textarea.value;
         console.log(userResponseEl);
@@ -55,7 +66,7 @@ $(() => {
         // Bind userResponse to userResponseEl.
         userResponseEl.textContent = userResponse;
         chat.append(userResponseEl);
-        
+
     }
 
     // Get the send button.

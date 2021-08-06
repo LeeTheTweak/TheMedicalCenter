@@ -345,6 +345,10 @@ body {
       flex-wrap: wrap;
 }
 
+.member-discount-area .member-discount-area-navigation {
+  display: none;
+}
+
 .member-discount-area .member-discount-title-area h2 {
   color: #284770;
 }
@@ -513,5 +517,104 @@ body {
   position: absolute;
   bottom: 1px;
   left: 100px;
+}
+
+/********************** MEDIA QUERIES *********************/
+@media (min-width: 901px) {
+  #mobile-header {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  #desktop-header {
+    display: none;
+  }
+  .jumbotron-title-area {
+    display: none;
+  }
+  .jumbotron-navigation {
+    display: none;
+  }
+  .save-on-section {
+    display: none;
+  }
+  .member-discount-area {
+    display: block;
+    text-align: center;
+  }
+  .member-discount-area p {
+    display: none;
+  }
+  .member-discount-area .member-discount-area-navigation {
+    display: block;
+  }
+  .member-discount-area .member-discount-area-navigation ul {
+    margin: 0;
+    padding: 0;
+  }
+  .member-discount-area .member-discount-area-navigation ul a {
+    color: #285e70;
+    width: 300px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .member-discount-area .member-discount-area-navigation ul a li {
+    line-height: 1.5;
+    list-style-type: none;
+    border-bottom: 1px solid white;
+  }
+  /** THE MAIN MOBILE HEADER AREA **************************/
+  #mobile-header {
+    display: block;
+    padding: 10px;
+  }
+  #mobile-header .middle-nav-section-mobile .virtual-assistant-area-mobile .virtual-assistant-image-mobile {
+    background: url("https://image.shutterstock.com/image-photo/black-doctor-portrait-isolated-on-260nw-246995734.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border: 2px solid #d8d8d8;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  #mobile-header .middle-nav-section-mobile .virtual-assistant-area-mobile .virtual-assistant-image-mobile:hover {
+    cursor: pointer;
+  }
+  #mobile-header .middle-nav-section-mobile .virtual-assistant-area-mobile p {
+    text-align: center;
+  }
+  #mobile-header .middle-nav-section-mobile .virtual-assistant-area-mobile p span {
+    font-weight: bold;
+    color: #284770;
+  }
+  #mobile-header .middle-nav-section-mobile .site-logo-area-mobile {
+    text-align: center;
+    color: #285e70;
+  }
+  #mobile-header .middle-nav-section-mobile .site-logo-area-mobile .fas {
+    font-size: 4rem;
+  }
+  #mobile-header .middle-nav-section-mobile .site-logo-area-mobile p {
+    font-size: 1.5rem;
+    margin: 0 0 0 5px;
+  }
+  #mobile-header .middle-nav-section-mobile .site-logo-area-mobile p span {
+    font-size: 2rem;
+  }
+  #mobile-header .middle-nav-section-mobile .searchbar-area-mobile {
+    width: 100%;
+  }
+  #mobile-header .middle-nav-section-mobile .searchbar-area-mobile .searchbar-div {
+    width: 270px;
+    margin: auto;
+  }
+  #mobile-header .middle-nav-section-mobile .searchbar-area-mobile .searchbar-div input {
+    width: auto;
+  }
+  #mobile-header .middle-nav-section-mobile .searchbar-area-mobile .searchbar-div button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
