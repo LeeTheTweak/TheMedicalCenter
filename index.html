@@ -19,52 +19,96 @@
 <body>
     <!-- The main header of the website -->
     <header>
-        <!-- The top nav section -->
-        <section class="top-nav-section">
-            <!-- Left navigation -->
-            <nav class="navigations left-navigation-area">
-                <ul>
-                    <li> <a href="index.html">Welcome!</a></li>
-                    <li> <a href="#">Employers</a></li>
-                    <li> <a href="#">Products</a></li>
-                    <li> <a href="#">Providers</a></li>
-                </ul>
-            </nav>
-            <!-- Right navigation -->
-            <nav class="navigations right-navigation-area">
-                <ul>
-                    <li><a href="#">Company Information</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="#">Language Assistance</a></li>
-                </ul>
-            </nav>
+        <section id="desktop-header">
+            <!-- The top nav section -->
+            <section class="top-nav-section">
+                <!-- Left navigation -->
+                <nav class="navigations left-navigation-area">
+                    <ul>
+                        <li> <a href="index.html">Welcome!</a></li>
+                        <li> <a href="#">Employers</a></li>
+                        <li> <a href="#">Products</a></li>
+                        <li> <a href="#">Providers</a></li>
+                    </ul>
+                </nav>
+                <!-- Right navigation -->
+                <nav class="navigations right-navigation-area">
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Language Assistance</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- The middle header section -->
+            <section class="middle-nav-section">
+
+                <!-- The site logo area -->
+                <div class="site-logo-area">
+                    <i class="fas fa-medkit"></i>
+                    <p>The<br /><span>Medical Center</span></p>
+                </div>
+
+                <!-- The virtual assistant photo area -->
+                <div class="virtual-assistant-area">
+                    <div class="virtual-assistant-image"></div>
+                    <p>Ask <span id="virtualAssistantName"></span><br />our virtual assistant</p>
+                </div>
+
+                <!-- The search bar form -->
+                <div class="searchbar searchbar-area">
+                    <form action="#" method="POST">
+                        <div class="searchbar-div">
+                            <input type="search" name="search" placeholder="Search" />
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </section>
-        <!-- The middle header section -->
-        <section class="middle-nav-section">
-            
-            <!-- The site logo area -->
-            <div class="site-logo-area">
-                <i class="fas fa-medkit"></i>
-                <p>The<br /><span>Medical Center</span></p>
-            </div>
 
-            <!-- The virtual assistant photo area -->
-            <div class="virtual-assistant-area">
-                <div class="virtual-assistant-image"></div>
-                <p>Ask <span id="virtualAssistantName"></span><br />our virtual assistant</p>
-            </div>
 
-            <!-- The search bar form -->
-            <div class="searchbar searchbar-area">
-                <form action="#" method="POST">
-                    <div class="searchbar-div">
-                        <input type="search" name="search" placeholder="Search" />
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </div>
-                </form>
-            </div>
+
+
+
+        <!-- ---------- MOBILE HEADER AREA FOR MEDIA QUEARY ------------------------- -->
+
+
+
+
+
+        <section id="mobile-header">
+            <section class="top-nav-section-mobile">
+                <!-- Hamburger Icon -->
+
+            </section>
+            <section class="middle-nav-section-mobile">
+                <!-- The virtual assistant photo area (FOR MOBILE) -->
+                <div class="virtual-assistant-area-mobile">
+                    <div class="virtual-assistant-image-mobile"></div>
+                    <p>Ask <span id="virtualAssistantName"></span> our virtual assistant</p>
+                </div>
+                <!-- Site Logo Area -->
+                <div class="site-logo-area-mobile">
+                    <i class="fas fa-medkit"></i>
+                    <p>The Medical Center</p>
+                </div>
+                <div class="searchbar searchbar-area-mobile">
+                    <form action="#" method="POST">
+                        <div class="searchbar-div">
+                            <input type="search" name="search" placeholder="Search" />
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </section>
     </header>
+
+
+
+
+
 
     <!-- The jumbotron section with the banner and info -->
 
@@ -103,6 +147,7 @@
                         is important. Lets find the right plan for you.
                     </p>
                 </div>
+
 
                 <!-- The sign up form -->
 
@@ -145,9 +190,26 @@
         </div>
     </section>
 
+
+
+
     <!-- Member Discount Area -->
 
+
+    
+
     <section class="member-discount-area">
+
+        <!-- From Jumbotron Navigation -->
+        <nav class="member-discount-area-navigation">
+            <ul>
+                <a href="#"><li>Insurance Basics</li></a>
+                <a href="#"><li>Shop Plans & Products</li></a>
+                <a href="#"><li>Find a Doctor or Hospital</li></a>
+                <a href="#"><li>Member Services</li></a>
+                <a href="#"><li>Sign Up or Log In</li></a>
+            </ul>
+        </nav>
         <div class="member-discount-title-area">
             <h2>MEMBER DISCOUNTS</h2>
             <p>
@@ -221,7 +283,7 @@
                     </td>
                     <td>
                         <p>
-                            Lifestyles plays a crucial role in your life and health. The way we 
+                            Lifestyles plays a crucial role in your life and health. The way we
                             eat, sleep, move, and basically live, is all under our lifestyles
                         </p>
                     </td>
@@ -269,7 +331,6 @@
     </div>
 
     <script src="./src/scripts/chatbox.js"></script>
-    <script src="src/scripts/reactive.js"></script>
 </body>
 
 </html>
