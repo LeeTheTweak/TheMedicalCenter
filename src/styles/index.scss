@@ -358,6 +358,9 @@ body {
 // Save On Products Area
 
 .save-on-section {
+    p {
+        color: $black_20;
+    }
     table {
         thead {
             th {
@@ -385,11 +388,15 @@ body {
 // Connect with our community.
 
 .connect-community-section {
+    p {
+        color: $black_20;
+    }
     text-align: center;
     padding: 20px;
     .title-text-content {
         h2 {
             color: $blue_30;
+            font-size: 3vw;
         }
     }
 }

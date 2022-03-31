@@ -410,6 +410,10 @@ body {
   color: white;
 }
 
+.save-on-section p {
+  color: #4e4e4e;
+}
+
 .save-on-section table thead th {
   font-size: 3vw;
   color: #285e70;
@@ -435,8 +439,13 @@ body {
   padding: 20px;
 }
 
+.connect-community-section p {
+  color: #4e4e4e;
+}
+
 .connect-community-section .title-text-content h2 {
   color: #285e70;
+  font-size: 3vw;
 }
 
 .donny-chatbox {
