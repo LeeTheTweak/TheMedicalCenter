@@ -382,15 +382,16 @@ body {
     }
 }
 
-// Members Section
+// Connect with our community.
 
-.members-section {
-    background-position: top right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 400px;
-    background-image: url("https://agcdn-2mrybbgckm7omi0k.netdna-ssl.com/wp-content/uploads/2017/06/alphagamma-3-reasons-why-helping-people-is-not-always-good-for-business-entrepreneurship-1021x580.jpg");
+.connect-community-section {
+    text-align: center;
+    padding: 20px;
+    .title-text-content {
+        h2 {
+            color: $blue_30;
+        }
+    }
 }
 
 // Donny chatbox
